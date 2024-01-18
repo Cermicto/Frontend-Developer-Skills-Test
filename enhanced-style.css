@@ -1,0 +1,135 @@
+#enhancedNotification {
+    width: 400px;
+    z-index: 999;
+    position: fixed;
+    background: #84acb2fc;
+    line-height: 2.0;
+    padding: 27px;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 0 #0000009c;
+    border: 1px solid;
+    transition: all 0.5s ease-in-out;
+}
+
+.notificationClose {
+    box-shadow: 0px 100px 150px 0 #0000009c !important;
+    opacity: 20;
+}
+
+#enhancedNotification p a {
+    font-weight: bold;
+    color: #3a506c;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding: 0 5px 10px 5px;
+    transition: 0.25s ease-in-out;
+}
+
+#enhancedNotification p a:hover {
+    color: white;
+    border-color: white;
+    padding-bottom: 0px;
+}
+
+#closeNotificationBtn {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background: #77aeb4;
+    border: 1px solid;
+    box-shadow: 2px 2px 10px 0 #000;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#topLogo {
+    border-radius: 50%;
+    border: 7px solid #eeeeee;
+    box-shadow: 0 0 20px 0 #3c506b;
+}
+
+#mainNav ul li a, #secondaryNav ul li a {
+    transition: all 0.5s ease-in-out;
+    padding-bottom: 20px;
+    border-color: transparent;
+        letter-spacing: 1px;
+}
+
+#mainNav ul li a:hover {
+    border-color: white;
+    padding-bottom: 0px;
+}
+
+#secondaryNav ul li a:hover {
+    border-color: darkGrey;
+    padding-bottom: 0px;
+}
+
+#historyText p {
+    padding: 0 70px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -51px;
+    text-shadow: 1px 1px 1px white;
+    padding: 20px;
+    border: 1px solid;
+    background: #ffffffe6;
+}
+
+#secondNavContainer {
+    background: white;
+    border-bottom: 1px solid #000;
+    box-shadow: -7px 0 50px 0 #00000088, 7px 0 50px 0 #00000088;
+    border-top: 1px solid;
+    z-index: 99999;
+    position: relative;
+}
+
+.history-slider-image {
+    outline: 0px solid transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.history-slider-image:hover, .selected {
+    outline: 5px solid;
+    transform: scale(0.9,0.9);
+}
+
+.selected {
+    border: 1px solid white;
+    transform: scale(1,1);
+}
+
+.breadcrumb {
+    transition: all 0.4s ease-in-out;
+}
+
+.breadcrumb:hover {
+    background: white;
+}
+
+.header-number {
+    font-size: 135px;
+    color: #707f9a;
+    font-weight: bold;
+    text-shadow: 0 0 50px white;
+}
+
+#mountainNav li.selected-mountain-schedule-link, #mountainNav li:hover {
+    background: #b0b4be;
+    outline: 1px solid;
+    transform: scale(0.9,0.9);
+}

@@ -1,0 +1,403 @@
+/* 
+	Version: style.css.1.0.0.1-commented
+	Author: Matthew Gross
+	
+	Caller: index.html
+*/
+
+* { /* Fixing content-box defaults so boxes are the sizes I specify. */
+  box-sizing: border-box;
+}
+
+body { /* The only other fix for default adjustments. */
+  margin: 0;
+}
+
+p {
+  font-family: Lato, sans-serif; /* I tend to use a webfont with one fallback font on the uders machine for sure, usually. */
+}
+
+.inner-container { /* The main container class for keeping the content of the page in the center horizontally. */
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+
+#hero { /* I used background images for the various sections with min-heights to keep the cover background-size visible. */
+  background-image: url("images/bg_image01.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+#history {
+  background-image: url("images/bg_image02.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+#historyText p {
+  padding: 0 70px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -33px;
+  text-shadow: 1px 1px 1px white;
+}
+
+#historySlider {
+  background: #414f6bc9;
+  padding-top: 25px;
+}
+
+#slidesContainer {
+  position: relative;
+  width: 894px;
+  height: 170px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#slidesContainer ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 2684px;
+}
+
+.bc-container {
+  text-align: center;
+  list-style: none;
+  top: -28px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  left: 7px;
+}
+
+.breadcrumb { /* I made simple css breadcrumbs to link to the various slide pages. */
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  background: grey;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#mountainContent {
+  background-image: url(images/bg_image03.jpg);
+  background-size: cover;
+  margin-top: -19px;
+  min-height: 400px;
+}
+
+.mountain-schedule { /* The fade effect for the mountain schedule is pretty simple. They start 335px to the left with an opacity 
+of 0 and change opacity to 100 over 0.5 seconds when a class of "active" is added to the element (next rule below). It looks smooth 
+in the interface though while navigating the site. */
+  background: #ffffff8c;
+  display: inline-block;
+  padding: 25px;
+  margin-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 335px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.mountain-schedule.active {
+  left: 35px;
+  opacity: 100;
+}
+
+.mountain-schedule h3 {
+  font-family: Oswald, sans-serif;
+  font-size: 32px;
+  color: #414f6b;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.schedule-data {
+  width: 275px;
+  font-family: Lato;
+  font-weight: light;
+}
+
+.schedule-date {
+  width: 135px;
+  float: left;
+  clear: both;
+}
+
+#mainNav,
+#secondaryNav {
+  float: right;
+}
+
+#mainNav {
+  margin-top: 15px;
+}
+
+#secondaryNav {
+  margin-top: 25px;
+  position: absolute;
+  right: 4px;
+  top: 8px;
+}
+
+#mainNav ul,
+#secondaryNav ul {
+  list-style: none;
+  margin: 0;
+}
+
+#mainNav ul li,
+#secondaryNav ul li {
+  display: inline-block;
+}
+
+#mainNav ul li a, /* These nested element targetings are what SASS is great at handling. */
+#secondaryNav ul li a {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  margin-left: 50px;
+}
+
+#mainNav ul li a {
+  color: white;
+}
+
+#secondaryNav ul li a {
+  color: #414f6b;
+  padding-right: 10px;
+}
+
+#secondNavContainer {
+  background: white;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-number,
+.header-title {
+  font-family: Oswald, sans-serif;
+  position: relative;
+}
+
+.header-title {
+  font-size: 32px;
+  margin: 0;
+  color: #414f6b;
+  position: absolute;
+  left: 130px;
+  top: 92px;
+}
+
+#climbTitle {
+  left: 147px;
+}
+
+#climbText p {
+  margin-top: 89px;
+  padding: 0 30px;
+  margin-left: 245px;
+}
+
+.header-number {
+  font-size: 135px;
+  color: #707f9a;
+  font-weight: bold;
+}
+
+.history-slider-image {
+  display: inline-block;
+  width: 220px;
+  height: 135px;
+}
+
+.history-slider-image-01 {
+  background: url("images/slider_image01.jpg");
+}
+
+.history-slider-image-02 {
+  background: url("images/slider_image02.jpg");
+}
+
+#innerSliderContainer {
+  left: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+#topLogo,
+#logotypedLogo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#historyBreadcrumbsMedium {
+  display: none;
+}
+
+#historyBreadcrumbsSmall {
+  display: none;
+}
+
+#historyBreadcrumbsExtraSmall {
+  display: none;
+}
+
+#climb {
+  margin-top: -18px;
+  background: white;
+  height: 220px;
+}
+
+#mountainSubNavArea {
+  background: #414f6b;
+  height: 67px;
+}
+
+#mountainNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mountainNav li {
+  display: inline-block;
+  font-family: Oswald, sans-serif;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 38px;
+  position: relative;
+  top: -5px;
+  padding: 5px 20px;
+  margin-bottom: -5px;
+  margin-left: -4px;
+}
+
+#mountainNav li a {
+  color: #b0b4be;
+  text-decoration: none;
+}
+
+#mountainNav li.selected-mountain-schedule-link,
+#mountainNav li:hover {
+  background: #b0b4be;
+}
+
+#mountainNav li.selected-mountain-schedule-link a,
+#mountainNav li:hover a {
+  color: #414f6b;
+  border-bottom: 2px solid;
+}
+
+#footer {
+  background: #414f6b;
+  height: 80px;
+}
+
+.logo-bottom {
+  float: left;
+  position: absolute;
+  top: 20px;
+}
+
+#copyrightText {
+  top: 30px;
+  text-align: right;
+  font-family: Lato, sans-serif;
+  color: #63769d;
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+}
+
+#climbHeader {
+  width: 240px;
+  overflow: hidden;
+  float: left;
+}
+
+@media only screen and (max-width: 945px) {
+  #slidesContainer {
+    width: 670px;
+  }
+  #historyBreadcrumbsWide {
+    display: none;
+  }
+  #historyBreadcrumbsMedium {
+    display: block;
+  }
+  #historyBreadcrumbsSmall {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #slidesContainer {
+    width: 448px;
+  }
+  #historyBreadcrumbsWide {
+    display: none;
+  }
+  #historyBreadcrumbsMedium {
+    display: none;
+  }
+  #historyBreadcrumbsSmall {
+    display: block;
+  }
+
+  #hero {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #climbText p {
+    margin-top: 40px;
+    padding: 0 30px;
+    margin-left: 245px;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  #slidesContainer {
+    width: 224px;
+  }
+  #historyBreadcrumbsWide {
+    display: none;
+  }
+  #historyBreadcrumbsMedium {
+    display: none;
+  }
+  #historyBreadcrumbsSmall {
+    display: none;
+  }
+  #historyBreadcrumbsExtraSmall {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  #climbText p {
+    margin-top: 10px;
+    padding: 0 30px;
+    margin-left: 245px;
+    font-size: 14px;
+  }
+}

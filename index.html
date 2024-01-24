@@ -1,0 +1,377 @@
+<!--
+	Author: Matthew Gross
+	Version: index.html.1.0.0.1-commented
+
+	Local Linked Files: style.css
+	                    script.js
+-->
+
+<!-- 
+    Commented code for interview of Matthew Gross. You can get to know more about what I do and experience I have. 
+
+	I'll be writing about the why of web development in my code and a little bit of the how so your other developers can get to know my style as well. I love web development and think I make a nice addition to any team or company. 
+
+	This form of commenting is what I would look for in developers I come across for discussions.
+
+	My conventions I'll use in this document for naming tag's attributes: 
+
+	Ids are camel cased:
+
+		Example: "myId"
+				 <div id="myId"></div>
+
+	Classes are separated by dashes and all lowercase:
+
+		Example: "my-class"
+				 <div class="my-class"></div>
+
+	Formatting of tags I usually do four spaces/one tab indent for each level of containment, such as:
+
+		Example of nested elements formatting for clarity: 
+
+				<div id="myId" class="my-class">
+					<p>
+						My paragraph text
+					</p>
+
+					<p>
+						Spaced-above paragraph tag, for clarity of inner element vertical spacing guide.
+					</p>
+			     </div>
+
+	The reason I put tag inner content on it's own line is due to line code replacement common to GitHub. It makes 
+	it easier for me to see changes in diffs.
+
+	I inline hyperlinks in content. e.g. <a href="#">Link</a>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Set the viewport so the desktop site doesn't go to mobile -->
+
+	<title>
+		Skills Test | Matthew Gross | PSD to HTML Conversion
+	</title>
+
+	<!-- Code taken from Google Fonts. That's the only code I didn't write on this website. I'm not sure if the two "preconnect" lines are necessary but am not sure what they do with Google's API. -->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Google Fonts to match Photoshop text. I just grabbed all the weights.-->
+
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- The default stylesheet loaded last before end of head tag. I really enjoy using SASS on larger projects, however. -->
+<body>
+	<div id="hero"><!-- The "hero" section is reponsive for adjusting the graphic to smaller screen sizes. -->
+		<div class="inner-container"><!-- Usually I'll have a container class for containing the content.-->
+			<div id="topContainer"><!-- Container for the top logo and navigation links. -->
+				<img id="topLogo" src="images/logo.png" /><!-- non-logotyped logo for the site. -->
+
+				<nav id="mainNav"><!-- Main navigation. -->
+					<ul>
+						<li>
+							<a href="#history">01. HISTORY</a><!-- Bookmarked to link to the history section.-->
+						</li>
+
+						<li>
+							<a href="#">02. TEAM</a><!-- Left unlinked to "Climb" section. -->
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div><!-- #hero -->
+
+	<div id="secondNavContainer"><!-- Second navigation container with logotype added. -->
+		<div class="inner-container">
+	    	<img id="logotypedLogo" src="images/los_angeles_mountains_logo.png" />
+
+	    	<nav id="secondaryNav">
+	    		<ul>
+	    			<li>
+	    				<a href="#history">01. HISTORY</a>
+	    			</li>
+
+	    			<li>
+	    				<a href="#">02. TEAM</a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+	    </div>
+	</div>
+
+	<div id="history" name="history"><!-- The history section of the content. Lorem ipsum didn't show up clearly as the 
+	                                      section is sized a little different from the Photoshop mockup. I added a text 
+	                                      shadow glow to help it stand out. -->
+		<div class="inner-container">
+			<div id="historyHeader" class="header-container">
+				<div id="historyNumber" class="header-number"><!-- The most frustrating part of Photoshop layout to HTML/CSS 
+																   in that responsiveness is not built in to the design and 
+																   drag-and-drop text layout is not available for the way 
+																   I develop. I'm more of the "program the drag-and-drop editor as a website type of guy anyway. -->
+					01.
+					<h3 id="historyTitle" class="header-title">
+						HISTORY
+					</h3>
+				</div>
+			</div>
+
+			<div id="historyText">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+				</p>
+			</div>
+		</div>
+
+		<!-- I used background images on "li" tags to display the slider images. -->
+
+		<!-- Naming conventions for the generic slider with styling from the Photoshop file. -->
+
+		<div id="historySlider">
+			<div class="inner-container">
+				<div id="slidesContainer">
+					<ul id="innerSliderContainer">
+						<li id="historySliderImage01" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage02" class="history-slider-image history-slider-image-02"></li>
+						<li id="historySliderImage03" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage04" class="history-slider-image history-slider-image-02"></li>
+						<li id="historySliderImage05" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage06" class="history-slider-image history-slider-image-02"></li>
+						<li id="historySliderImage07" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage08" class="history-slider-image history-slider-image-02"></li>
+						<li id="historySliderImage09" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage10" class="history-slider-image history-slider-image-02"></li>
+						<li id="historySliderImage11" class="history-slider-image history-slider-image-01"></li>
+						<li id="historySliderImage12" class="history-slider-image history-slider-image-02"></li>
+					</ul>
+				</div><!-- #slidesContainer -->
+			</div><!-- .inner-container -->
+		</div><!-- #historySlider -->
+
+		<!-- I'll use the standard CSS conventions for noting HTML comments at the end of tags to keep track of 
+			tags spanning multiple lines. e.g. --><!-- .class -->
+
+		<ul id="historyBreadcrumbsWide" class="bc-container">
+			<li id="wbc01" class="breadcrumb"></li>
+			<li id="wbc02" class="breadcrumb"></li>
+			<li id="wbc03" class="breadcrumb"></li>
+		</ul>
+
+		<ul id="historyBreadcrumbsMedium" class="bc-container">
+			<li id="mbc01" class="breadcrumb"></li>
+			<li id="mbc02" class="breadcrumb"></li>
+			<li id="mbc03" class="breadcrumb"></li>
+			<li id="mbc04" class="breadcrumb"></li>
+		</ul>
+
+		<ul id="historyBreadcrumbsSmall" class="bc-container">
+			<li id="sbc01" class="breadcrumb"></li>
+			<li id="sbc02" class="breadcrumb"></li>
+			<li id="sbc03" class="breadcrumb"></li>
+			<li id="sbc04" class="breadcrumb"></li>
+			<li id="sbc05" class="breadcrumb"></li>
+			<li id="sbc06" class="breadcrumb"></li>
+		</ul>
+
+		<ul id="historyBreadcrumbsExtraSmall" class="bc-container">
+			<li id="ebc01" class="breadcrumb"></li>
+			<li id="ebc02" class="breadcrumb"></li>
+			<li id="ebc03" class="breadcrumb"></li>
+			<li id="ebc04" class="breadcrumb"></li>
+			<li id="ebc05" class="breadcrumb"></li>
+			<li id="ebc06" class="breadcrumb"></li>
+			<li id="ebc07" class="breadcrumb"></li>
+			<li id="ebc08" class="breadcrumb"></li>
+			<li id="ebc09" class="breadcrumb"></li>
+			<li id="ebc10" class="breadcrumb"></li>
+			<li id="ebc11" class="breadcrumb"></li>
+			<li id="ebc12" class="breadcrumb"></li>
+		</ul>
+	</div><!-- #history -->
+
+	<!-- The HTML breadcrumb code is just one way to code. Many times I'll just use document.createElement to make all 
+	     the elements using JavaScript. -->
+	
+
+	<div id="climb" name="climb">
+		<div class="inner-container">
+			<div id="climbHeader" class="header-container">
+				<div id="climbNumber" class="header-number">
+					02.
+					<h3 id="climbTitle" class="header-title">
+						CLIMB
+					</h3>
+				</div>
+			</div>
+
+			<div id="climbText"><!-- Honestly what gave me the most pain was getting the 'history' and 'climb' text sections
+			                         worked out for responsiveness. -->
+				<p>
+					Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
+				</p>
+			</div>
+		</div>
+	</div><!-- #climb -->
+
+	<div id="mountainSubNavArea">
+		<div class="inner-container">
+			<nav id="mountain">
+				<ul id="mountainNav">
+					<li class="selected">
+						<a href="#" name="mountainSchedule1" class="mountain-link">Mountain 1
+						</a>
+					</li>
+
+					<li>
+						<a href="#" name="mountainSchedule2" class="mountain-link">Mountain 2
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div><!-- #mountainSubNav" -->
+
+	<!-- The mountain schedule section was the only part I overtly added CSS transition animations for a nice effect while 
+	     loading in and out the mountain schedule information displays. I have so much experience with transition and 
+	     animation it hurts and a large amount of experience with 3D CSS as well. -->
+
+	<div id="mountainContent">
+		<div class="inner-container">
+			<div id="mountainSchedule1" class="mountain-schedule active">
+				<h3>
+					Schedule
+				</h3>
+
+				<div class="schedule-data">
+					<div class="schedule-date">
+						25 Nov 2016
+					</div>
+
+					<div class="schedule-status">
+						Vestibulum viverra
+					</div>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							28 Nov 2016
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+
+					<br>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							18 Dec 2016
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+
+					<br>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							7 Jan 2017
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="mountainSchedule2" class="mountain-schedule">
+				<h3>
+					Schedule
+				</h3>
+
+				<div class="schedule-data">
+					<div class="schedule-date">
+						25 Nov 2016
+					</div>
+
+					<div class="schedule-status">
+						Vestibulum viverra
+					</div>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							28 Nov 2016
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+
+					<br>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							18 Dec 2016
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+
+					<br>
+
+					<div class="schedule-data">
+						<div class="schedule-date">
+							7 Jan 2017
+						</div>
+
+						<div class="schedule-status">
+							Vestibulum viverra
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="inner-container">
+			<img class="logo-bottom" src="images/los_angeles_mountains_logo_bottom.png" />
+
+			<div id="copyrightText">
+				COPYRIGHT 2016. ALL RIGHTS RESERVED.
+			</div>
+			
+			<!--
+
+			Has that Photoshop mockup been used for hiring before? 
+
+			Oh, I copied the Lorem ipsum text out of the Photoshop mockup as well as the schedule content. 
+				
+			All the code is custom written the first time ever for this project one key at a time. 
+
+			I'm glad I found some time to comment this code because it gave me a chance to emphasize skills 
+			and the like.
+
+			I think I did well and it's just the tip of the iceberg as far as my capabilities are concerned.
+
+			If anyone has any questions or some of the developers would like to talk to me about my code I'd 
+			be more than happy to spend as much time as they would like
+
+			My direct information is:
+
+			Matthew Gross
+			573-639-6848
+			mattgross2023@gmail.com
+
+			-->
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script><!-- Loads after document body. -->
+</body>
+</html>
